@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #525252;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(207, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.nav ul {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav ul li,
+.nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.nav ul li a:hover,
+.nav .login a:hover {
+  color: #525252;
+}
+
+.nav .logo {
+  flex: 3;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2em;
+}
+
+.nav .login {
+  flex: 1;
+  text-align: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav .login a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav .login span {
+  width: 10px;
+  height: 10px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  background-size: cover;
+  filter: blur(10px);
+}
+
+.banner .text-banner {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+}
+
+.banner .text-banner h1 {
+  color: #000000;
+  text-shadow: 2px 2px #ff0000;
+  font-size: 4em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.banner .text-banner h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  color: #fff;
+}
+
+.about {
+  margin: 50px;
+  margin-top: 50px;
+  padding-top: 6rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  color: #ff0000;
+  text-shadow: 3px 3px #000;
+  font-size: 0.9em;
+}
+
+.about h3 {
+  font-size: 0.9em;
+  color: white;
+}
+
+.jurusan-title {
+  padding-top: 6rem;
+  margin-top: 100px;
+  color: #ff0000;
+  text-shadow: 3px 3px #000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.service .icon {
+  font-size: 3em;
+}
+
+.service h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+}
+
+.service p {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.selengkapnya {
+  background-color: rgba(0, 0, 0, 0); /* Green */
+  border: 2px solid #ff0000;
+  color: #fc0000;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.selengkapnya:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.footer .head {
+  display: flex;
+  margin-top: 30px;
+  height: 150px;
+  background-color: #570000;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.head .nav-footer ul {
+  list-style: none;
+  gap: 25px;
+}
+
+.head .nav-footer h3,
+.head .social-media h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 2px 2px #000;
+}
+
+.nav-footer ul li a,
+.social-media ul li a {
+  font-family: "REM", sans-serif;
+  text-decoration: none;
+}
+
+.nav-footer ul li a {
+  color: #fff;
+  transition: all 0.2s ease-in;
+  border-radius: 20px;
+}
+.nav-footer ul li a:hover {
+  background-color: #fff;
+  color: #000;
+  translate: 30px 0px;
+  letter-spacing: 2px;
+}
+
+.head .social-media ul {
+  display: flex;
+  list-style: none;
+  font-size: 2em;
+  gap: 10px;
+}
+
+.social-media ul .fa-square-instagram {
+  transform: skewY(10deg);
+  transition: all 0.2s ease;
+  color: #a500b4;
+}
+
+.social-media ul .fa-square-instagram:hover {
+  transform: none;
+  scale: 1.5;
+}
+
+.social-media ul .fa-facebook {
+  transform: skewY(-10deg);
+  transition: all 0.2s ease;
+
+  color: #0051ff;
+}
+
+.social-media ul .fa-facebook:hover {
+  transform: none;
+  scale: 1.5;
+}
+
+.social-media ul .fa-square-whatsapp {
+  color: #0bff03;
+  transform: skewY(10deg);
+  transition: all 0.2s ease;
+}
+
+.social-media ul .fa-square-whatsapp:hover {
+  transform: none;
+  scale: 1.5;
+}
+
+.social-media ul .fa-youtube {
+  color: #ff0000;
+  transform: skewY(-10deg);
+  transition: all 0.2s ease;
+}
+
+.social-media ul .fa-youtube:hover {
+  transform: none;
+  scale: 1.5;
+}
+
+.footer .bottom {
+  background-color: #ff0000;
+  font-size: 1.2em;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.bottom h4 {
+  font-size: 0.8em;
+  font-family: "Quando", serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+}
+
+.bottom .contact-me-button {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 200px;
+  will-change: transform;
+}
+
+.bottom .contact-me-button:disabled {
+  pointer-events: none;
+}
+
+.bottom .contact-me-button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-3px);
+}
+
+.bottom .contact-me-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .bottom {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav .login {
+    display: none;
+  }
+
+  .nav .logo {
+    flex: 1;
+  }
+
+  .banner .text-banner h1 {
+    font-size: 3em;
+  }
+  .banner .text-banner h3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner .text-banner h1 {
+    font-size: 2em;
+  }
+  .banner .text-banner h3 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav .logo {
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
+
+  .banner img {
+    height: 500px;
+  }
+
+  .banner .text-banner {
+    font-size: 0.8em;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
